@@ -1,22 +1,54 @@
-# Asana
-Asana Integration for Rocket.Chat
+# Asana Integration for Rocket.Chat
 
-## Getting Started
-Now that you have generated a blank default Rocket.Chat App, what are you supposed to do next?
-Start developing! Open up your favorite editor, our recommended one is Visual Studio code,
-and start working on your App. Once you have something ready to test, you can either
-package it up and manually deploy it to your test instance or you can use the CLI to do so.
-Here are some commands to get started:
-- `rc-apps package`: this command will generate a packaged app file (zip) which can be installed **if** it compiles with TypeScript
-- `rc-apps deploy`: this will do what `package` does but will then ask you for your server url, username, and password to deploy it for you
 
-## Documentation
-Here are some links to examples and documentation:
-- [Rocket.Chat Apps TypeScript Definitions Documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/)
-- [Rocket.Chat Apps TypeScript Definitions Repository](https://github.com/RocketChat/Rocket.Chat.Apps-engine)
-- [Example Rocket.Chat Apps](https://github.com/graywolf336/RocketChatApps)
-- Community Forums
-  - [App Requests](https://forums.rocket.chat/c/rocket-chat-apps/requests)
-  - [App Guides](https://forums.rocket.chat/c/rocket-chat-apps/guides)
-  - [Top View of Both Categories](https://forums.rocket.chat/c/rocket-chat-apps)
-- [#rocketchat-apps on Open.Rocket.Chat](https://open.rocket.chat/channel/rocketchat-apps)
+The Asana App for Rocket.Chat  provides a seamless integration between Asana and Rocket.Chat and improves collaboration between teams.
+The application allows users to create and manage thier tasks and workspace, subscribe to task events, create new tasks, edit and delete their tasks, attachments, projects & workspaces and do much more right from Rocket.Chat.
+
+
+<h2>🚀 Features </h2>
+<ul>
+  <li>Quick and easy setup.</li> 
+  <li>Login to Asana with one click using built-in OAuth2 mechanism.</li>
+  <li>Subscribe to Task Events and get notified about new comments, priority changes, assignee updates, etc.</li>
+  <li>Retreive and manage tasks right from Rocket.Chat channels.</li>
+  <li>Create new tasks from Rocket.Chat and make channel of task assignees.</li>
+  <li>Edit the tasks right in Rocket.Chat and share them with other channel members.</li>
+</ul>
+
+
+<h2>🔧 Installation steps </h2>
+
+ 1. Clone this repo and Change Directory: </br>
+ `git clone https://github.com/RocketChat/Apps.Asana.Integration.git && cd Apps.Asana.Integration/`
+
+ 2. Install the required packages from `package.json`: </br>
+	 `npm install`
+
+ 3. Deploy Rocket.Chat app:
+ `rc-apps deploy --url <deployment_url> --username <user_username> --password <user_password>`
+Where:
+- `<deployment_url>` is your local server URL (if you are running in another port, change the 3000 to the appropriate port)
+- `<user_username>` is the username of your admin user.
+- `<user_password>` is the password of your admin user.
+
+For more info refer [this](https://developer.rocket.chat/apps-engine/getting-started/rocket.chat-app-engine-cli) guide.
+
+<h2>📲 Setup guide </h2>
+ <ul>
+  <li> You must first register your application with Asana to receive a client ID and client secret by following these steps: [Asana App Registration Guide](https://developers.asana.com/docs/oauth#register-an-application)</li> 
+  
+  
+  <li>Fill the details in the Asana app on your Rocket Chat server by following these steps:</li>
+  
+  1. Navigate to Administration->Apps. 
+  
+  2. Select the Installed tab.
+  
+  3. Click on Asana, and go to Settings tab.
+  
+  4. Enter your generated a Client ID and Client Secret and click on Save changes button.
+  
+  <li>Start the authorization by using /asana-app auth slash command.</li>
+</ul>
+
+
