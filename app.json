@@ -1,0 +1,15 @@
+{
+    "id": "6f33b97e-e066-4307-8643-23645685d9f5",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.44.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Mustafa Hasan Khan",
+        "homepage": "https://github.com/mustafahasankhan",
+        "support": "https://github.com/mustafahasankhan"
+    },
+    "name": "Asana",
+    "nameSlug": "asana",
+    "classFile": "AsanaApp.ts",
+    "description": "Asana Integration for Rocket.Chat"
+}
