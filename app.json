@@ -11,5 +11,6 @@
     "name": "Asana",
     "nameSlug": "asana",
     "classFile": "AsanaApp.ts",
-    "description": "Asana Integration for Rocket.Chat"
+    "description": "Asana Integration for Rocket.Chat",
+    "implements": []
 }
